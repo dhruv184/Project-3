@@ -75,8 +75,22 @@ class Application:
                 else:
 
                     print("\nAccount not Found\n")                
+            
+            elif choice =="4":
+                
+                account_number = int(input("Enter Account Number : "))
 
-            elif choice == "4":
+                account = self.bank.get_Account(account_number)
+
+                if account:
+
+                    print(account.get_current_Balance())
+
+                else:
+
+                    print("\nAccount not Found\n")    
+
+            elif choice == "5":
 
                 account_number = int(input("Enter Account Number : ")) 
                 account = self.bank.get_Account(account_number)
