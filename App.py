@@ -99,5 +99,5 @@ class Application:
                 print("\nInvalid choice. Please Try Again\n") 
 
 bank = Bank()
-app = Application()
+app = Application(bank)
 app.run()
