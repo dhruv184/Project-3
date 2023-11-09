@@ -10,7 +10,8 @@ class Saving_Account(Account):
     def apply_interest(self):
 
         Interest_Amount = self.current_Balance * self.interset_rate
-
+        self.current_Balance += Interest_Amount
+        
         return f"Interest applied amount : {Interest_Amount}. New Balance is {self.current_Balance}"
 
 class CheckingAccount(Account):
