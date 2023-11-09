@@ -84,7 +84,7 @@ class Application:
 
                 if account:
 
-                    print(account.get_current_Balance())
+                    print(account.get_Balance())
 
                 else:
 
