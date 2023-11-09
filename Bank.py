@@ -13,4 +13,12 @@ class Bank:
         for account in self.accounts:
             if account.account_number == account_number:
                 return account
-        return None         
+        return None 
+
+    def set_bank_name(self , bank_name):
+
+        self.bank_name = bank_name
+
+    def get_bank_name(self):
+
+        return self.bank_name             
