@@ -2,9 +2,9 @@ from Account import Account
 
 class Saving_Account(Account):
 
-    def __init__(self , account_number , account_Holder_Name , interest_rate , current_Balance):
+    def __init__(self , account_number , account_Holder_Name , interest_rate , current_Balance = 0):
 
-        super().__init__(account_number , account_Holder_Name , current_Balance)
+        super().__init__(account_number , account_Holder_Name , current_Balance )
         self.interset_rate = interest_rate
 
     def apply_interest(self):
