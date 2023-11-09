@@ -50,7 +50,7 @@ class Application:
 
                 self.bank.Add_Account(account)
 
-                print(f"\nAccount : {account_number} Created\n")
+                print(f"\nAccount --> Holder : {account_holder_name} Number : {account_number} Created\n")
 
             elif choice == "2":
 
