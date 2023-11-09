@@ -8,8 +8,14 @@ class Application:
         
     def run(self):
 
-        while True:
+        print("\nWelcome to the banking application!\n")
 
+        bank_name = str(input("Enter Bank Name : "))
+        self.bank.set_bank_name(bank_name)
+
+        while True:
+            
+            print(f"\nMenu : Welecome to {self.bank.get_bank_name()}")
             print("\n1. Create Account")
             print("2. Deposit Amount")
             print("3. WithDraw Amount")
