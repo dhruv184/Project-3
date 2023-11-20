@@ -30,4 +30,4 @@ class CheckingAccount(Account):
 
         else:
 
-            return "Insufficient Funds"   
+            return "Insufficient Funds"  
